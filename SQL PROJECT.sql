@@ -23,7 +23,7 @@ SELECT name
 FROM Employee
 ORDER BY name ASC;
 
--- Write a query that prints a list of employee names (i.e.: the name attribute) for employees in Employee having a salary greater than $2000 per month who have been employees for less than  months. Sort your result by ascending employee_id.
+-- Write a query that prints a list of employee names (i.e.: the name attribute) for employees in Employee having a salary greater than $2000 per month who have been employees for less than 10 months. Sort your result by ascending employee_id.
 SELECT name
 FROM Employee
 WHERE salary > 2000 
@@ -35,8 +35,8 @@ SELECT SUM(POPULATION)AS total_pop
 FROM CITY
 WHERE DISTRICT = "California";
 
--- 
-SELECT AVG(POPULATION)AS Query the average population of all cities in CITY where District is California.average_pop
+-- Query the average population of all cities in CITY where District is California.
+SELECT AVG(POPULATION)AS average_pop
 FROM CITY 
 WHERE DISTRICT = "California";
 
